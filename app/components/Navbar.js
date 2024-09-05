@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, Typography, Button, Menu, MenuItem, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Menu, MenuItem, Box, Link } from '@mui/material';
 import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
-import logo from './logo.png'; // Adjust path accordingly
+import logoImage from './openart-f37951f6-6b23-47be-ac5b-f1c6be527db5.png';
+
 
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -19,31 +20,32 @@ export default function Navbar() {
     <AppBar 
       position="fixed"
       sx={{ 
-        backgroundColor: "#2c2c2c", // Purple Baseline
-        color: "#f95d9b", // Pink Highlight
+        backgroundColor: "#2c2c2c",
+        color: "#f95d9b",
         top: 0,
         zIndex: 10,
         height: '64px',
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        {/* Container for logo and text */}
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Box sx={{ mr: 2 }}> {/* Adds margin to the right of the image */}
-            <Image
-              src={logo}
-              alt="InstaWise AI Logo"
-              width={40} // Adjust size as needed
-              height={40} // Adjust size as needed
-              style={{ borderRadius: '50%' }} // Optional: makes the image circular
-            />
-          </Box>
-          <Typography variant="h6">
-            InstaWise AI
-          </Typography>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', color: 'inherit', textDecoration: 'none' }}>
+            <Box sx={{ mr: 2 }}> 
+              <Image
+                src={logoImage}
+                alt="InstaWise AI Logo"
+                width={60}
+                height={60}
+                style={{ borderRadius: '50%' }}
+              />
+            </Box>
+            <Typography variant="h6">
+              InstaWise AI
+            </Typography>
+          </Link>
+
         </Box>
 
-        {/* Menu and authentication buttons */}
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Button color="inherit" onClick={handleMenuClick}>
             Menu
@@ -55,8 +57,8 @@ export default function Navbar() {
             onClose={handleMenuClose}
             sx={{
               '& .MuiPaper-root': {
-                backgroundColor: '#1e1e1e', // Dark Gray for menu background
-                color: '#f95d9b', // Pink Highlight for menu text
+                backgroundColor: '#1e1e1e', 
+                color: '#f95d9b',
               }
             }}
           >
@@ -67,7 +69,7 @@ export default function Navbar() {
               sx={{
                 color: '#f95d9b',
                 '&:hover': {
-                  backgroundColor: '#39a0ca', // Bluewater Lowlight on hover
+                  backgroundColor: '#39a0ca',
                 },
               }}
             >
