@@ -4,6 +4,7 @@ import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import logoImage from './openart-f37951f6-6b23-47be-ac5b-f1c6be527db5.png';
 
+
 export default function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -42,6 +43,7 @@ export default function Navbar() {
               InstaWise AI
             </Typography>
           </Link>
+
         </Box>
 
         <Box sx={{ display: 'flex', alignItems: 'center' }}>

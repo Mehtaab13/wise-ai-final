@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import Image from 'next/image';
 import aiLogo from '../components/openart-f37951f6-6b23-47be-ac5b-f1c6be527db5.png'; // Path to your AI logo image
+
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -186,7 +187,7 @@ export default function Home() {
             >
               {msg.role === "assistant" && (
                 <Image
-                  src={aiLogo}
+                  src={logo}
                   alt="AI Logo"
                   width={75}
                   height={75}

@@ -95,7 +95,7 @@ export default function Home() {
             src={myImage}
             alt="InstaWise AI"
             layout="responsive"
-            width={100} // Set a standard width
+            width={200} // Set a standard width
             height={800} // Set a standard height
             style={{ maxWidth: '15%', height: 'auto' }} // Ensure image scales down properly
           />
