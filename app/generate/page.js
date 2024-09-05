@@ -6,7 +6,7 @@ import { doc, setDoc, getDoc } from "firebase/firestore";
 import { useRouter } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import Image from 'next/image';
-import aiLogo from '../components/openart-6c1f0dad-3173-4861-a08b-8fc21254b77f.png'; // Path to your AI logo image
+import aiLogo from '../components/openart-f37951f6-6b23-47be-ac5b-f1c6be527db5.png'; // Path to your AI logo image
 import Navbar from "../components/Navbar";
 
 export default function Home() {
@@ -188,9 +188,9 @@ export default function Home() {
                 <Image
                   src={aiLogo}
                   alt="AI Logo"
-                  width={30}
-                  height={30}
-                  style={{ marginRight: 8 }}
+                  width={75}
+                  height={75}
+                  style={{ marginRight: 0 }}
                 />
               )}
               <Box

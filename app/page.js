@@ -10,7 +10,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Navbar from "./components/Navbar";
-import myImage from './components/openart-6c1f0dad-3173-4861-a08b-8fc21254b77f.png';
+import myImage from './components/openart-f37951f6-6b23-47be-ac5b-f1c6be527db5.png';
 
 export default function Home() {
   const router = useRouter();
@@ -88,7 +88,6 @@ export default function Home() {
           sx={{
             display: 'flex',
             justifyContent: 'center',
-            my: 5, // Adds margin on top and bottom of the image
             width: '100%',
           }}
         >
@@ -98,7 +97,7 @@ export default function Home() {
             layout="responsive"
             width={100} // Set a standard width
             height={800} // Set a standard height
-            style={{ maxWidth: '10%', height: 'auto' }} // Ensure image scales down properly
+            style={{ maxWidth: '15%', height: 'auto' }} // Ensure image scales down properly
           />
         </Box>
         
